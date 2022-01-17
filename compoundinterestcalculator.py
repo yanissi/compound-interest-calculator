@@ -7,7 +7,7 @@ import os
 import boto3
 import pytz
 import altair as alt
-from link_button import link_button
+#from link_button import link_button
 
 st.set_page_config(page_title="Compound Interest Calculator",page_icon="💹",layout="wide")
 
@@ -101,7 +101,7 @@ if submitButton:
     col3.metric("Profit realised", f"{round(profit,2)}", delta=None, delta_color='normal')
 
     with col4:
-        link_button(f"It's never too late to start investing! Begin your journey right now!", url='https://docs.streamlit.io/en/stable/')
+        #link_button(f"It's never too late to start investing! Begin your journey right now!", url='https://docs.streamlit.io/en/stable/')
 
     c = alt.Chart(df.reset_index()).mark_line().encode(x=alt.X('index', title='Year'),y=alt.Y('PriceUSD', title='Total Value'))
 
