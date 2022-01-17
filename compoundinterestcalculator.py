@@ -102,6 +102,7 @@ if submitButton:
 
     with col4:
         #link_button(f"It's never too late to start investing! Begin your journey right now!", url='https://docs.streamlit.io/en/stable/')
+        st.text("Nothing to see here yet")
 
     c = alt.Chart(df.reset_index()).mark_line().encode(x=alt.X('index', title='Year'),y=alt.Y('PriceUSD', title='Total Value'))
 
